@@ -7,8 +7,8 @@ const ContactSection = () => {
       icon: <MapPin className="h-6 w-6 text-blue-600" />,
       title: "Our Location",
       details: [
-        "123 Sports Street",
-        "Sportsville, SP 12345",
+        "7625 New Boyd Rd",
+        "Suwanee, GA 30024",
         "United States"
       ]
     },
@@ -16,9 +16,9 @@ const ContactSection = () => {
       icon: <Phone className="h-6 w-6 text-blue-600" />,
       title: "Phone Numbers",
       details: [
-        "Main: (555) 123-4567",
-        "Bookings: (555) 987-6543",
-        "Support: (555) 345-6789"
+        "Main: (678) 678-5678",
+        // "Bookings: (555) 987-6543",
+        // "Support: (555) 345-6789"
       ]
     },
     {
@@ -34,9 +34,10 @@ const ContactSection = () => {
       icon: <Clock className="h-6 w-6 text-blue-600" />,
       title: "Opening Hours",
       details: [
-        "Monday - Friday: 6 AM - 11 PM",
-        "Saturday: 7 AM - 10 PM",
-        "Sunday: 7 AM - 9 PM"
+        "OPENING SOON"
+        // "Monday - Friday: 6 AM - 11 PM",
+        // "Saturday: 7 AM - 10 PM",
+        // "Sunday: 7 AM - 9 PM"
       ]
     }
   ];

@@ -18,11 +18,11 @@ const About = () => {
       title: "Top-tier Equipment",
       description: "We provide high-quality equipment that meets international standards."
     },
-    {
-      icon: <Calendar className="h-8 w-8 text-blue-900" />,
-      title: "Regular Tournaments",
-      description: "Participate in our monthly tournaments and compete with the best players."
-    }
+    // {
+    //   icon: <Calendar className="h-8 w-8 text-blue-900" />,
+    //   title: "Regular Tournaments",
+    //   description: "Participate in our monthly tournaments and compete with the best players."
+    // }
   ];
 
   return (
@@ -63,11 +63,11 @@ const About = () => {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
                 <p className="text-gray-600 mb-6">
-                  Founded in 2018, EliteSportsClub was born from a passion for badminton and cricket. We saw a need for a premium venue where enthusiasts could play, train, and compete in world-class facilities.
+                  EliteSportsClub was born from a passion for badminton and cricket. We saw a need for a premium venue where enthusiasts could play, train, and compete in world-class facilities.
                 </p>
-                <p className="text-gray-600 mb-6">
+                {/* <p className="text-gray-600 mb-6">
                   Over the years, we've grown to become the preferred destination for sports lovers, hosting numerous tournaments and helping players develop their skills through our coaching programs.
-                </p>
+                </p> */}
                 <p className="text-gray-600">
                   Our mission is to provide an exceptional sporting experience in a welcoming environment that caters to players of all skill levels.
                 </p>

@@ -17,7 +17,7 @@ const CricketSection = () => {
           <div className="lg:w-1/2">
             <div className="relative">
               <img 
-                src="https://www.freepik.com/premium-vector/vector-cricket-club-logo-design-batsman-playing-cricket_342733885.htm" 
+                src="assets/cricket.jpg" 
                 alt="Indoor Cricket Facility" 
                 className="rounded-xl shadow-lg w-full"
               />

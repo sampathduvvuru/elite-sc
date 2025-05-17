@@ -23,8 +23,8 @@ const BookingSection = () => {
                   <Calendar className="h-6 w-6 mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold text-lg">Opening Hours (From July 2025)</h4>
-                    <p className="text-blue-200">Monday - Friday: 6 AM - 11 PM</p>
-                    <p className="text-blue-200">Saturday - Sunday: 7 AM - 10 PM</p>
+                    {/* <p className="text-blue-200">Monday - Friday: 6 AM - 11 PM</p>
+                    <p className="text-blue-200">Saturday - Sunday: 7 AM - 10 PM</p> */}
                   </div>
                 </div>
                 
