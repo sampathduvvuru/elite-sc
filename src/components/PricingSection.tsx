@@ -245,6 +245,6 @@ const PricingSection = () => {
 //       </div>
 //     </section>
 //   );
-// };
+};
 
 export default PricingSection;
