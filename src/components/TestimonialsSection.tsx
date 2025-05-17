@@ -1,8 +1,8 @@
-// import React, { useState, useEffect } from 'react';
-// import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
-// const TestimonialsSection = () => {
-//   const testimonials = [
+const TestimonialsSection = () => {
+  const testimonials = [
 //     {
 //       name: "Sarah Johnson",
 //       role: "Badminton Enthusiast",
@@ -38,7 +38,7 @@
 //       quote: "Training at EliteSportsClub has significantly improved my game. The courts meet international standards, and the coaching staff is exceptional.",
 //       rating: 5
 //     }
-//   ];
+  ];
 
 //   const [currentIndex, setCurrentIndex] = useState(0);
 //   const [touchStart, setTouchStart] = useState(0);
@@ -189,6 +189,6 @@
 //       </div>
 //     </section>
 //   );
-// };
+};
 
-// export default TestimonialsSection;
+export default TestimonialsSection;
