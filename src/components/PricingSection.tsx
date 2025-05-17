@@ -87,7 +87,7 @@ const PricingSection = () => {
 //       badminton: false,
 //       cricket: true
 //     }
-//   ];
+  ];
 
 //   return (
 //     <section id="pricing" className="py-20 bg-gray-50">
