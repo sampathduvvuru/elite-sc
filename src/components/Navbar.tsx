@@ -24,7 +24,7 @@ const Navbar = () => {
         isScrolled ? 'bg-white shadow-md py-6' : 'bg-transparent py-4'
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-8 flex justify-between items-center">
         <div className="flex items-center">
           <h1 className={`font-bold text-2xl ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
             Elite Sports Club
