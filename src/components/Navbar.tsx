@@ -148,11 +148,11 @@ const Navbar = () => {
           <div className="pt-4 border-t border-gray-200">
             <div className="flex items-center space-x-2 text-gray-600">
               <MapPin className="h-4 w-4" />
-              <span className="text-sm">123 Sports Street, City</span>
+              <span className="text-sm">7625 New Boyd Rd, Suwanee GA 30024</span>
             </div>
             <div className="flex items-center space-x-2 text-gray-600 mt-2">
               <Phone className="h-4 w-4" />
-              <span className="text-sm">+1 (555) 123-4567</span>
+              <span className="text-sm">+1 (678) 678-5678</span>
             </div>
           </div>
         </div>

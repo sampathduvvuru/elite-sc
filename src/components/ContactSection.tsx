@@ -64,7 +64,7 @@ const ContactSection = () => {
               <div className="h-full">
                 <iframe 
                   title="Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" 
+                  src="https://www.google.com/maps/place/7625+New+Boyd+Rd,+Suwanee,+GA+30024/@34.0681335,-84.1538084,876m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88f5990533ca4cd1:0xde169c77437f28f4!8m2!3d34.0681335!4d-84.1538084!16s%2Fg%2F11vpz91c6h?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" 
                   className="w-full h-full min-h-[300px]" 
                   style={{ border: 0 }} 
                   allowFullScreen="" 
