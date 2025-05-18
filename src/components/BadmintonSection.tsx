@@ -6,7 +6,7 @@ const BadmintonSection = () => {
     "International standard lighting system",
     "High-quality Yonex nets and posts",
     "Spacious viewing area for spectators",
-    "Video analysis equipment for training sessions",
+    // "Video analysis equipment for training sessions",
     "Climate-controlled environment"
   ];
 

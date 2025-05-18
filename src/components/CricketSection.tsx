@@ -5,9 +5,9 @@ const CricketSection = () => {
     "4 Professional indoor cricket lanes",
     "State-of-the-art bowling machines",
     "Specialized cricket pitch and flooring",
-    "Digital scoreboards and analytics",
+    // "Digital scoreboards and analytics",
     "Equipment rental available on-site",
-    "Protective gear for all players"
+    // "Protective gear for all players"
   ];
 
   return (
@@ -17,7 +17,7 @@ const CricketSection = () => {
           <div className="lg:w-1/2">
             <div className="relative">
               <img 
-                src="https://www.freepik.com/premium-vector/vector-cricket-club-logo-design-batsman-playing-cricket_342733885.htm" 
+                src="../assets/Cricket2.jpg" 
                 alt="Indoor Cricket Facility" 
                 className="rounded-xl shadow-lg w-full"
               />
