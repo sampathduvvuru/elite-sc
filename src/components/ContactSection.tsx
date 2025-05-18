@@ -62,14 +62,14 @@ const ContactSection = () => {
           <div className="md:flex">
             <div className="md:w-1/2">
               <div className="h-full">
-                <iframe 
+                {/* <iframe 
                   title="Location Map"
                   src="https://www.google.com/maps/place/7625+New+Boyd+Rd,+Suwanee,+GA+30024/@34.0681335,-84.1538084,876m/data=!3m2!1e3!4b1!4m6!3m5!1s0x88f5990533ca4cd1:0xde169c77437f28f4!8m2!3d34.0681335!4d-84.1538084!16s%2Fg%2F11vpz91c6h?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" 
                   className="w-full h-full min-h-[300px]" 
                   style={{ border: 0 }} 
                   allowFullScreen="" 
                   loading="lazy"
-                ></iframe>
+                ></iframe> */}
               </div>
             </div>
             

@@ -17,7 +17,7 @@ const CricketSection = () => {
           <div className="lg:w-1/2">
             <div className="relative">
               <img 
-                src="assets/cric3.jpg" 
+                src="src/components/assets/cric3.jpg" 
                 alt="Indoor Cricket Facility" 
                 className="rounded-xl shadow-lg w-full"
               />
