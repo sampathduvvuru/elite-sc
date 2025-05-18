@@ -54,7 +54,7 @@ const About = () => {
           <div className="md:flex">
             <div className="md:w-1/2">
               <img 
-                src="/assets/logo.jpeg" 
+                src="/assets/logo.jpg" 
                 alt="Our Facilities" 
                 className="h-full w-full object-cover"
               />
