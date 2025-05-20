@@ -17,7 +17,7 @@ function App() {
 
   return (
     // <div className="min-h-screen bg-white">
-    <div className="min-h-screen bg-white pt-[100px]">  
+    <div className="pt-[90px]">
       <Navbar />
       <Hero />
       <About />

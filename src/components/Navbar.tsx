@@ -9,47 +9,61 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const navLinks = [
+    { href: '#home', label: 'Home' },
+    { href: '#badminton', label: 'Badminton' },
+    { href: '#cricket', label: 'Cricket' },
+    { href: '#pricing', label: 'Pricing' },
+    { href: '#contact', label: 'Contact' },
+  ];
 
   return (
     <>
       {/* Fixed Header */}
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
+          isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
         }`}
       >
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <h1 className={`font-bold text-2xl ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <h1
+            className={`font-bold text-2xl ${
+              isScrolled ? 'text-blue-900' : 'text-white'
+            }`}
+          >
             Elite Sports Club
           </h1>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8">
-            {['home', 'badminton', 'cricket', 'pricing', 'contact'].map((section) => (
+            {navLinks.map((link) => (
               <a
-                key={section}
-                href={`#${section}`}
-                className={`font-medium capitalize hover:text-blue-500 transition-colors ${
+                key={link.href}
+                href={link.href}
+                className={`font-medium hover:text-blue-500 transition-colors ${
                   isScrolled ? 'text-gray-800' : 'text-white'
                 }`}
               >
-                {section}
+                {link.label}
               </a>
             ))}
             <a
               href="#booking"
-              className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors"
+              className="ml-4 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors"
             >
               Book Now
             </a>
           </nav>
 
-          {/* Mobile Toggle Button */}
-          <button className="md:hidden focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden focus:outline-none z-50"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             {isOpen ? (
               <X className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
             ) : (
@@ -59,48 +73,50 @@ const Navbar = () => {
         </div>
       </header>
 
-      {/* Mobile Dropdown Menu (outside header) */}
-      {isOpen && (
-        <div className="md:hidden bg-white fixed top-[80px] w-full z-40 shadow-lg">
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            {['home', 'badminton', 'cricket', 'pricing', 'contact'].map((section) => (
-              <a
-                key={section}
-                href={`#${section}`}
-                onClick={() => setIsOpen(false)}
-                className="font-medium text-gray-800 hover:text-blue-500 transition-colors"
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </a>
-            ))}
-
+      {/* Mobile Dropdown */}
+      <div
+        className={`md:hidden fixed top-[72px] left-0 w-full bg-white shadow-lg z-40 transition-all duration-300 ${
+          isOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'
+        }`}
+      >
+        <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+          {navLinks.map((link) => (
             <a
-              href="#booking"
+              key={link.href}
+              href={link.href}
               onClick={() => setIsOpen(false)}
-              className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors text-center"
+              className="font-medium text-gray-800 hover:text-blue-500 transition-colors"
             >
-              Book Now
+              {link.label}
             </a>
+          ))}
+          <a
+            href="#booking"
+            onClick={() => setIsOpen(false)}
+            className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors text-center"
+          >
+            Book Now
+          </a>
 
-            {/* Contact Info */}
-            <div className="pt-4 border-t border-gray-200">
-              <div className="flex items-center space-x-2 text-gray-600">
-                <MapPin className="h-4 w-4" />
-                <span className="text-sm">7625 New Boyd Rd, Suwanee GA 30024</span>
-              </div>
-              <div className="flex items-center space-x-2 text-gray-600 mt-2">
-                <Phone className="h-4 w-4" />
-                <span className="text-sm">+1 (678) 678-5678</span>
-              </div>
+          {/* Contact Info for Mobile */}
+          <div className="pt-4 border-t border-gray-200">
+            <div className="flex items-center space-x-2 text-gray-600">
+              <MapPin className="h-4 w-4" />
+              <span className="text-sm">7625 New Boyd Rd, Suwanee GA 30024</span>
+            </div>
+            <div className="flex items-center space-x-2 text-gray-600 mt-2">
+              <Phone className="h-4 w-4" />
+              <span className="text-sm">+1 (678) 678-5678</span>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 };
 
 export default Navbar;
+
 
 
 
