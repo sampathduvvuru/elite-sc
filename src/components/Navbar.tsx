@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, MapPin, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +22,8 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const navItems = ['Home', 'Badminton', 'Cricket', 'Pricing', 'Contact'];
+
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -36,8 +38,9 @@ const Navbar = () => {
             </h1>
           </div>
 
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            {['Home', 'Badminton', 'Cricket', 'Pricing', 'Contact'].map((item) => (
+            {navItems.map((item) => (
               <a 
                 key={item}
                 href={`#${item.toLowerCase()}`}
@@ -56,6 +59,7 @@ const Navbar = () => {
             </a>
           </nav>
 
+          {/* Mobile Menu Button */}
           <button 
             className="md:hidden focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
@@ -76,11 +80,11 @@ const Navbar = () => {
         }`}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-          {['Home', 'Badminton', 'Cricket', 'Pricing', 'Contact'].map((item) => (
+          {navItems.map((item) => (
             <a 
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="font-medium text-gray-800 hover:text-blue-500 transition-colors"
+              className="font-medium text-gray-800 hover:text-blue-500 transition-colors text-center"
               onClick={handleNavClick}
             >
               {item}
@@ -93,17 +97,6 @@ const Navbar = () => {
           >
             Book Now
           </a>
-          
-          <div className="pt-4 border-t border-gray-200">
-            <div className="flex items-center space-x-2 text-gray-600">
-              <MapPin className="h-4 w-4" />
-              <span className="text-sm">123 Sports Street, City</span>
-            </div>
-            <div className="flex items-center space-x-2 text-gray-600 mt-2">
-              <Phone className="h-4 w-4" />
-              <span className="text-sm">+1 (555) 123-4567</span>
-            </div>
-          </div>
         </div>
       </div>
     </header>
