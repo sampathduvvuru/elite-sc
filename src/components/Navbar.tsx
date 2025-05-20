@@ -20,8 +20,8 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-6' : 'bg-transparent py-6'
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled ? 'bg-white shadow-md py-6' : 'bg-transparent py-6'  
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -96,8 +96,8 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div 
-        className={`md:hidden bg-white absolute w-full left-0 shadow-lg transition-transform duration-300 transform ${
-          isOpen ? 'translate-y-0' : '-translate-y-full'
+          className={`md:hidden bg-white absolute w-full left-0 top-full shadow-lg transition-all duration-300 transform ${
+            isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'  
         }`}
       >
         <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
